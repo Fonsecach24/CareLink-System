@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --default-color:  rgb(0, 110, 146);
+}
+
+::selection{
+    background-color: var(--default-color);
+    color: white;
+}
+
+#else{
+    color: white;
+}
+
+body{
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--deault-color);
+    padding: 40px;
+    background: url(../sistema2/imagens/Medisaf.jpg);
+}
+
+.container{
+    max-width: 850px;
+    background-color:rgb(0, 110, 146, 0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 30px;
+}
+
+.container .login-form .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+.container .login-form .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background-color: var(--default-color);
+}
+
+.container .login-form .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.container .login-form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.container .login-form .input-box input:focus,
+.container .login-form .input-box input:valid{
+    border-color: var(--deault-color);
+}
+
+.container .login-form .input-box input[type="submit"]{
+    background-color: var(--deault-color);
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.container .login-form .input-box i{
+    position: absolute;
+    color: var(--deault-color);
+    font-size: 17px;
+}
+
+.container .login-form .fotgot a{
+    color: var(--deault-color);
+    text-decoration: none;
+}
+
+.container .login-form .divider{
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.container .login-form .signup-text{
+    color: white;
+}
+
+.container .login-form .signup-text a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.container .login-img{
+    width: 40%;
+    
+}
+
+@media (max-width:800px){
+    .login-img{
+        display: none;
+        
+    }
+}

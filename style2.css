@@ -1,0 +1,150 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:honeydew;
+
+}
+
+header{
+    background-color: rgb(0, 110, 146);
+    display: flex;
+    font-size: 14pt;
+    justify-content: space-between;
+    align-items: center;
+    height: 15rem;
+    border-radius: 20px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+a{
+    color: white;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+
+#voltar{
+    color: white;
+    font-size: 30pt;
+}
+.rebith{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(white, rgb(0, 110, 146));
+    border-radius: 20px;
+}
+
+
+#img{
+    height: 20rem;
+    width: 20rem;
+    margin-top: 50px;
+}
+
+.corpo{
+    height: 79vh;
+}
+
+main{
+    background-color:honeydew;
+    margin-top: 150px;   
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+#subir, #fechar{
+    color: black;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#subir{
+    position: fixed;
+}
+
+iframe{
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.footer{
+    background: rgb(0, 110, 146);
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px 0;
+}
+
+.footer-col ul li a{
+    font-size: 13px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: rgb(32, 130, 98);
+    padding: 10px;
+}
+
+.footer-col .midias-sociais a i{
+    font-size: 20px;
+}
+
+.footer-col .midias-sociais a:hover{
+    color: rgb(32, 130, 98);
+    background-color: white;
+}
